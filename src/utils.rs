@@ -1,3 +1,4 @@
+use core::result::Result::Ok;
 use axaddrspace::{device::AccessWidth, HostPhysAddr};
 use axerrno::AxResult;
 
@@ -36,5 +37,3 @@ pub(crate) fn perform_mmio_write(
 
     Ok(())
 }
-
-pub use super::vgicr::enable_one_lpi;
